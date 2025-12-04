@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-04T12:06:34 IST" name="Default suite" finished-at="2025-12-04T12:06:43 IST" duration-ms="8768">
+    <groups>
+    </groups>
+    <test started-at="2025-12-04T12:06:34 IST" name="Default test" finished-at="2025-12-04T12:06:43 IST" duration-ms="8768">
+      <class name="testscript.AdminUsersTest">
+        <test-method is-config="true" signature="browserInitialization()[pri:0, instance:testscript.AdminUsersTest@2a4fb17b]" started-at="2025-12-04T12:06:34 IST" name="browserInitialization" finished-at="2025-12-04T12:06:38 IST" duration-ms="3206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyTheUserIsAbleToEnterAdminUserInformation()[pri:0, instance:testscript.AdminUsersTest@2a4fb17b]" started-at="2025-12-04T12:06:38 IST" name="verifyTheUserIsAbleToEnterAdminUserInformation" finished-at="2025-12-04T12:06:43 IST" duration-ms="5494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheUserIsAbleToEnterAdminUserInformation -->
+        <test-method is-config="true" signature="QuitAndClose()[pri:0, instance:testscript.AdminUsersTest@2a4fb17b]" started-at="2025-12-04T12:06:43 IST" name="QuitAndClose" finished-at="2025-12-04T12:06:43 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitAndClose -->
+      </class> <!-- testscript.AdminUsersTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
