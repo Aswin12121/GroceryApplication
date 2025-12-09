@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [ParallelTesting]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Chrometest(failed)">
+<suite name="Failed suite [CrossBrowserTesting]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Chrometest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="testscript.AdminUsersTest">
@@ -13,7 +13,7 @@
       </class> <!-- testscript.AdminUsersTest -->
     </classes>
   </test> <!-- Chrometest(failed) -->
-  <test thread-count="5" parallel="tests" name="Firefoxtest(failed)">
+  <test thread-count="5" name="Firefoxtest(failed)">
     <parameter name="browser" value="Firefox"/>
     <classes>
       <class name="testscript.AdminUsersTest">
@@ -25,4 +25,4 @@
       </class> <!-- testscript.AdminUsersTest -->
     </classes>
   </test> <!-- Firefoxtest(failed) -->
-</suite> <!-- Failed suite [ParallelTesting] -->
+</suite> <!-- Failed suite [CrossBrowserTesting] -->

@@ -15,7 +15,7 @@ public class ExcelUtilities {
 	static FileInputStream f;
 	static XSSFWorkbook w;
 	static XSSFSheet s;
-	
+
 	public static String getStringData(int a,int b,String sheet) throws IOException 
 	{
 		String filepath = Constants.TESTDATAFILE;
@@ -27,7 +27,7 @@ public class ExcelUtilities {
 		return c.getStringCellValue();
 	}
 	
-	public static int getIntegerData(int a,int b,String sheet) throws IOException 
+	public static String getIntegerData(int a,int b,String sheet) throws IOException 
 	{
 		String filepath = Constants.TESTDATAFILE;
 		f=new FileInputStream(filepath);
@@ -36,7 +36,8 @@ public class ExcelUtilities {
 		XSSFRow r=s.getRow(a);
 		XSSFCell c=r.getCell(b);
 		int y= (int) c.getNumericCellValue();//type casting
-		return y;
+		return String.valueOf(y);
+		//return y;
 		
 	}
 
