@@ -11,9 +11,6 @@ import pages.LoginPage;
 
 import utilities.ExcelUtilities;
 
-
-
-
 public class AdminUsersTest extends Base {
 	@Test
 	public void verifyUserIsAbleToEnterAdminUserInformations() throws IOException
