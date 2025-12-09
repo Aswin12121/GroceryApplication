@@ -16,6 +16,7 @@ public class ManageCategoryPage {
 	@FindBy(xpath = "//input[@name='main_img']") WebElement ChooseFileButton;
 	@FindBy(xpath = "//span[text()='discount']") WebElement Discount;
 	@FindBy(xpath = "//button[text()='Save']") WebElement SaveButton;
+	@FindBy(xpath = "//button[@aria-hidden='true']")WebElement addCategoryAlert;
 	
 	public WebDriver driver;
 	
@@ -57,6 +58,6 @@ public class ManageCategoryPage {
 	}
 	public boolean isAlertDisplayed() {
 		
-		return false;
+		return addCategoryAlert.isDisplayed();
 	}
 }
