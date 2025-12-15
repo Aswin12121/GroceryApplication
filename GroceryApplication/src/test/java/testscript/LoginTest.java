@@ -49,11 +49,11 @@ public class LoginTest extends Base {
 		Assert.assertTrue(alert,Constants.LOGINCORRECTUSERNAMEANDINCORRECTPASSWORD);
 		
 	}
-	@Test(description = "Used to verify the user with invalid credentials")
-	public void verifyUserIsAbleToLoginUsingIncorrectUsernameAndIncorrectPassword() throws IOException
+	@Test(description = "Used to verify the user with invalid credentials",dataProvider ="LoginProvider")
+	public void verifyUserIsAbleToLoginUsingIncorrectUsernameAndIncorrectPassword(String username,String password) throws IOException
 	{
-		String username = ExcelUtilities.getStringData(4, 0, "loginpage");
-		String password = ExcelUtilities.getStringData(4, 1, "loginpage") ;
+//		String username = ExcelUtilities.getStringData(4, 0, "loginpage");
+//		String password = ExcelUtilities.getStringData(4, 1, "loginpage") ;
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterTheUsername(username);
 		loginpage.enterThePassword(password);
